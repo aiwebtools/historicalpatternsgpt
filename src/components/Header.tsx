@@ -38,17 +38,17 @@ const Header = () => {
           <a href="/" className="flex items-center space-x-2">
             <Eye size={28} className="text-cyberpunk-blue animate-pulse-glow" />
             <div>
-              <h1 className="text-xl font-bold gradient-text">Uncovering Hidden Historical Patterns GPT</h1>
-              <p className="text-xs text-cyberpunk-blue">Presented by AiWebTools.Ai</p>
+              <h1 className="text-xl font-extrabold gradient-text tracking-wider">Uncovering Hidden Historical Patterns GPT</h1>
+              <p className="text-xs text-cyberpunk-blue font-medium">Presented by AiWebTools.Ai</p>
             </div>
           </a>
           
-          <nav className="hidden md:flex items-center space-x-6 mt-2 md:mt-0">
+          <nav className="hidden md:flex items-center space-x-4 mt-2 md:mt-0">
             {navLinks.map((link, index) => (
               <a 
                 key={index} 
                 href={link.url}
-                className="nav-link text-sm font-semibold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-cyberpunk-gold hover:from-amber-200 hover:to-yellow-500 transition-all duration-300 px-3 py-1 rounded-md hover:scale-105 hover:shadow-gold relative overflow-hidden"
+                className="nav-button text-sm font-bold tracking-wide px-4 py-2 border-2 border-cyberpunk-blue/50 bg-black/40 hover:bg-cyberpunk-blue/20 transition-all duration-300 hover:border-cyberpunk-blue text-cyberpunk-blue hover:text-white"
                 target={link.url.startsWith('http') ? '_blank' : undefined}
                 rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
               >
@@ -78,7 +78,7 @@ const Header = () => {
             <a 
               key={index} 
               href={link.url} 
-              className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-cyberpunk-gold hover:from-amber-200 hover:to-yellow-500 transition-all duration-300 font-medium tracking-wide hover:pl-2 hover:border-l-2 hover:border-cyberpunk-gold"
+              className="font-bold text-cyberpunk-blue border-2 border-cyberpunk-blue/50 px-4 py-2 hover:bg-cyberpunk-blue/20 transition-all duration-300"
               target={link.url.startsWith('http') ? '_blank' : undefined}
               rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
               onClick={() => setMobileMenuOpen(false)}

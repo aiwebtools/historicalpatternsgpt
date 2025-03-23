@@ -15,11 +15,11 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left max-w-xl mx-auto lg:mx-0">
-            <div className="inline-block px-3 py-1 rounded-full bg-cyberpunk-blue/20 backdrop-blur-sm border border-cyberpunk-blue/40 mb-6 animate-fade-in">
-              <span className="text-sm font-medium text-cyberpunk-blue">Illuminate The Unseen</span>
+            <div className="inline-block px-3 py-1 rounded-none bg-cyberpunk-blue/20 backdrop-blur-sm border border-cyberpunk-blue/40 mb-6 animate-fade-in">
+              <span className="text-sm font-bold text-cyberpunk-blue tracking-wider">ILLUMINATE THE UNSEEN</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in" style={{
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight animate-fade-in tracking-wide" style={{
             animationDelay: '0.2s'
           }}>
               <span className="gradient-text">Uncovering Hidden</span><br />
@@ -36,15 +36,15 @@ const HeroSection = () => {
             animationDelay: '0.6s'
           }}>
               <a href="https://chatgpt.com/g/g-67df2c4efaa08191a3cd57599826e2b8-uncovering-hidden-historical-patterns-gpt" 
-                 className="cyber-button w-full sm:w-auto px-8 py-4 whitespace-nowrap" 
+                 className="cyber-button w-full sm:w-auto px-8 py-4 whitespace-nowrap rounded-none border-2 border-cyberpunk-blue" 
                  target="_blank" 
                  rel="noopener noreferrer">
-                <span className="text-base md:text-lg">Use Hidden Historical Patterns GPT</span>
+                <span className="text-base md:text-lg font-bold tracking-wider">USE HIDDEN HISTORICAL PATTERNS GPT</span>
               </a>
               
               <a href="#how-it-works" 
-                 className="flex items-center justify-center px-8 py-4 text-white/80 hover:text-white transition-colors w-full sm:w-auto whitespace-nowrap">
-                <span className="text-base md:text-lg">Learn More</span>
+                 className="flex items-center justify-center px-8 py-4 text-white hover:text-white transition-colors w-full sm:w-auto whitespace-nowrap border-2 border-cyberpunk-gold/50 hover:border-cyberpunk-gold hover:bg-cyberpunk-gold/10">
+                <span className="text-base md:text-lg font-bold tracking-wider">LEARN MORE</span>
                 <ChevronDown size={16} className="ml-2" />
               </a>
             </div>
