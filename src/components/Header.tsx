@@ -48,7 +48,7 @@ const Header = () => {
               <a 
                 key={index} 
                 href={link.url}
-                className="text-sm font-medium tracking-wide text-white/90 hover:text-cyberpunk-blue transition-colors duration-200 hover:scale-105 transform hover:shadow-glow px-3 py-1 rounded-md"
+                className="nav-link text-sm font-semibold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-cyberpunk-gold hover:from-amber-200 hover:to-yellow-500 transition-all duration-300 px-3 py-1 rounded-md hover:scale-105 hover:shadow-gold relative overflow-hidden"
                 target={link.url.startsWith('http') ? '_blank' : undefined}
                 rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
               >
@@ -78,7 +78,7 @@ const Header = () => {
             <a 
               key={index} 
               href={link.url} 
-              className="text-white/90 hover:text-cyberpunk-blue transition-colors duration-200 py-2 font-medium tracking-wide hover:pl-2 hover:border-l-2 hover:border-cyberpunk-blue"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-cyberpunk-gold hover:from-amber-200 hover:to-yellow-500 transition-all duration-300 font-medium tracking-wide hover:pl-2 hover:border-l-2 hover:border-cyberpunk-gold"
               target={link.url.startsWith('http') ? '_blank' : undefined}
               rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
               onClick={() => setMobileMenuOpen(false)}
