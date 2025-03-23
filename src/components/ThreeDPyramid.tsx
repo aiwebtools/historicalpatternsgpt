@@ -122,7 +122,7 @@ const ThreeDPyramid = () => {
           rel="noopener noreferrer"
         >
           <Button 
-            className="bg-cyberpunk-gold hover:bg-amber-400 text-black font-bold py-2 px-6 rounded-full shadow-gold hover:shadow-[0_0_15px_rgba(212,175,55,0.8)] transition-all duration-300 transform hover:scale-105"
+            className="bg-cyberpunk-gold hover:bg-amber-400 text-black font-bold text-xl py-4 px-10 rounded-full shadow-gold hover:shadow-[0_0_25px_rgba(212,175,55,0.9)] transition-all duration-300 transform hover:scale-105 min-w-[200px] tracking-wide"
           >
             TRY IT NOW
           </Button>
