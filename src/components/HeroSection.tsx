@@ -1,5 +1,7 @@
+
 import { ChevronDown } from 'lucide-react';
 import ThreeDPyramid from './ThreeDPyramid';
+
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-16">
       {/* Background Elements */}
@@ -33,12 +35,16 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 animate-fade-in" style={{
             animationDelay: '0.6s'
           }}>
-              <a href="https://chatgpt.com/g/g-67df2c4efaa08191a3cd57599826e2b8-uncovering-hidden-historical-patterns-gpt" className="cyber-button w-full sm:w-auto" target="_blank" rel="noopener noreferrer">
-                <span>Use Hidden Historical Patterns GPT</span>
+              <a href="https://chatgpt.com/g/g-67df2c4efaa08191a3cd57599826e2b8-uncovering-hidden-historical-patterns-gpt" 
+                 className="cyber-button w-full sm:w-auto px-8 py-4 whitespace-nowrap" 
+                 target="_blank" 
+                 rel="noopener noreferrer">
+                <span className="text-base md:text-lg">Use Hidden Historical Patterns GPT</span>
               </a>
               
-              <a href="#how-it-works" className="flex items-center justify-center px-6 py-3 text-white/80 hover:text-white transition-colors w-full sm:w-auto">
-                Learn More
+              <a href="#how-it-works" 
+                 className="flex items-center justify-center px-8 py-4 text-white/80 hover:text-white transition-colors w-full sm:w-auto whitespace-nowrap">
+                <span className="text-base md:text-lg">Learn More</span>
                 <ChevronDown size={16} className="ml-2" />
               </a>
             </div>
@@ -61,4 +67,5 @@ const HeroSection = () => {
       </div>
     </section>;
 };
+
 export default HeroSection;
