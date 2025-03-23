@@ -1,5 +1,7 @@
+
 import { ChevronDown } from 'lucide-react';
 import ThreeDPyramid from './ThreeDPyramid';
+
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-16">
       {/* Background Elements */}
@@ -29,6 +31,15 @@ const HeroSection = () => {
           }}>
               Analyze historical patterns beyond conventional narratives. Reveal the deeper structures that have guided civilization for millennia.
             </p>
+            
+            {/* Image Section - Inserted here between text and buttons */}
+            <div className="glass-card p-4 mb-8 neon-border animate-fade-in" style={{
+            animationDelay: '0.5s'
+          }}>
+              <a href="https://ideogram.ai/assets/image/lossless/response/C64dUHYfTbCDZYoc7XYIHQ" target="_blank" rel="noopener noreferrer">
+                <img src="https://ideogram.ai/assets/image/lossless/response/C64dUHYfTbCDZYoc7XYIHQ" alt="Uncovering Hidden Historical Patterns" className="w-full h-auto rounded-lg shadow-lg hover:opacity-90 transition-opacity duration-300" loading="lazy" />
+              </a>
+            </div>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 animate-fade-in" style={{
             animationDelay: '0.6s'
@@ -61,4 +72,5 @@ const HeroSection = () => {
       </div>
     </section>;
 };
+
 export default HeroSection;

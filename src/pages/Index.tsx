@@ -19,15 +19,6 @@ const Index = () => {
       <Header />
       
       <main className="pt-24">
-        {/* Embedded Image Section - Moved to top */}
-        <section className="section text-center mt-4 mb-8">
-          <div className="max-w-3xl mx-auto glass-card p-6 neon-border">
-            <a href="https://ideogram.ai/assets/image/lossless/response/C64dUHYfTbCDZYoc7XYIHQ" target="_blank" rel="noopener noreferrer">
-              <img src="https://ideogram.ai/assets/image/lossless/response/C64dUHYfTbCDZYoc7XYIHQ" alt="Uncovering Hidden Historical Patterns" className="w-full h-auto rounded-lg shadow-lg hover:opacity-90 transition-opacity duration-300" loading="lazy" />
-            </a>
-          </div>
-        </section>
-        
         <HeroSection />
         <FeaturesSection />
         <TestimonialsSection />
