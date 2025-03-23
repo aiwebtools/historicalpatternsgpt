@@ -25,7 +25,7 @@ const Index = () => {
         {/* Embedded Image Section */}
         <section className="section text-center">
           <h2 className="section-heading mb-10">
-            Explore <span className="gold-gradient-text">The Truth</span>
+            Explore <span className="gold-gradient-text">The Truth Hidden In Plain sight</span>
           </h2>
           
           <div className="max-w-3xl mx-auto glass-card p-6 neon-border">
