@@ -1,14 +1,13 @@
-
 import { ChevronDown } from 'lucide-react';
 import ThreeDPyramid from './ThreeDPyramid';
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-16">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-16">
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/3 left-1/4 w-72 h-72 bg-cyberpunk-blue/10 rounded-full filter blur-[80px] animate-pulse-glow"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-64 h-64 bg-cyberpunk-purple/10 rounded-full filter blur-[80px] animate-pulse-glow" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-1/4 right-1/3 w-64 h-64 bg-cyberpunk-purple/10 rounded-full filter blur-[80px] animate-pulse-glow" style={{
+        animationDelay: '1s'
+      }}></div>
       </div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -18,29 +17,27 @@ const HeroSection = () => {
               <span className="text-sm font-medium text-cyberpunk-blue">Illuminate The Unseen</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in" style={{
+            animationDelay: '0.2s'
+          }}>
               <span className="gradient-text">Uncovering Hidden</span><br />
               <span className="gold-gradient-text">Historical Patterns</span>
             </h1>
             
-            <p className="text-xl text-white/90 mb-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <p className="text-xl text-white/90 mb-8 animate-fade-in" style={{
+            animationDelay: '0.4s'
+          }}>
               Analyze historical patterns beyond conventional narratives. Reveal the deeper structures that have guided civilization for millennia.
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-              <a 
-                href="https://chatgpt.com/g/g-67df2c4efaa08191a3cd57599826e2b8-uncovering-hidden-historical-patterns-gpt"
-                className="cyber-button w-full sm:w-auto"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>Explore The Tool</span>
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 animate-fade-in" style={{
+            animationDelay: '0.6s'
+          }}>
+              <a href="https://chatgpt.com/g/g-67df2c4efaa08191a3cd57599826e2b8-uncovering-hidden-historical-patterns-gpt" className="cyber-button w-full sm:w-auto" target="_blank" rel="noopener noreferrer">
+                <span>Use Hidden Historical Patterns GPT</span>
               </a>
               
-              <a 
-                href="#how-it-works"
-                className="flex items-center justify-center px-6 py-3 text-white/80 hover:text-white transition-colors w-full sm:w-auto"
-              >
+              <a href="#how-it-works" className="flex items-center justify-center px-6 py-3 text-white/80 hover:text-white transition-colors w-full sm:w-auto">
                 Learn More
                 <ChevronDown size={16} className="ml-2" />
               </a>
@@ -62,8 +59,6 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
