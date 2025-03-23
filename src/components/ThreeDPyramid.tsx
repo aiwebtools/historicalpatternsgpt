@@ -1,6 +1,7 @@
 
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
+import { Button } from '@/components/ui/button';
 
 const ThreeDPyramid = () => {
   const mountRef = useRef<HTMLDivElement>(null);
@@ -111,7 +112,24 @@ const ThreeDPyramid = () => {
     };
   }, []);
   
-  return <div ref={mountRef} className="w-full h-full"/>;
+  return (
+    <div ref={mountRef} className="w-full h-full relative">
+      {/* Floating button */}
+      <div className="absolute top-[70%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 animate-float">
+        <a 
+          href="https://chatgpt.com/g/g-67df2c4efaa08191a3cd57599826e2b8-uncovering-hidden-historical-patterns-gpt"
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <Button 
+            className="bg-cyberpunk-gold hover:bg-amber-400 text-black font-bold py-2 px-6 rounded-full shadow-gold hover:shadow-[0_0_15px_rgba(212,175,55,0.8)] transition-all duration-300 transform hover:scale-105"
+          >
+            TRY IT NOW
+          </Button>
+        </a>
+      </div>
+    </div>
+  );
 };
 
 export default ThreeDPyramid;
