@@ -48,7 +48,7 @@ const Header = () => {
               <a 
                 key={index} 
                 href={link.url}
-                className="text-sm text-white/80 hover:text-cyberpunk-blue transition-colors duration-200"
+                className="text-sm font-medium tracking-wide text-white/90 hover:text-cyberpunk-blue transition-colors duration-200 hover:scale-105 transform hover:shadow-glow px-3 py-1 rounded-md"
                 target={link.url.startsWith('http') ? '_blank' : undefined}
                 rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
               >
@@ -78,7 +78,7 @@ const Header = () => {
             <a 
               key={index} 
               href={link.url} 
-              className="text-white/80 hover:text-cyberpunk-blue transition-colors duration-200 py-2"
+              className="text-white/90 hover:text-cyberpunk-blue transition-colors duration-200 py-2 font-medium tracking-wide hover:pl-2 hover:border-l-2 hover:border-cyberpunk-blue"
               target={link.url.startsWith('http') ? '_blank' : undefined}
               rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
               onClick={() => setMobileMenuOpen(false)}

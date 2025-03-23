@@ -30,13 +30,13 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a 
                 href="tel:+14758008096"
-                className="text-sm text-cyberpunk-blue hover:text-cyberpunk-purple transition-colors duration-200"
+                className="text-sm font-medium tracking-wide text-cyberpunk-blue hover:text-cyberpunk-purple transition-colors duration-200 hover:underline"
               >
                 (475) 800-8096
               </a>
               <a 
                 href="mailto:Contact@ai-webtools.com"
-                className="text-sm text-cyberpunk-blue hover:text-cyberpunk-purple transition-colors duration-200"
+                className="text-sm font-medium tracking-wide text-cyberpunk-blue hover:text-cyberpunk-purple transition-colors duration-200 hover:underline"
               >
                 Contact@ai-webtools.com
               </a>
@@ -50,7 +50,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.url} 
-                    className="text-sm text-white/70 hover:text-cyberpunk-blue transition-colors duration-200"
+                    className="text-sm font-medium tracking-wide text-white/80 hover:text-cyberpunk-blue transition-colors duration-200 hover:translate-x-1 transform inline-block"
                     target={link.url.startsWith('http') ? '_blank' : undefined}
                     rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
                   >
@@ -68,7 +68,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.url} 
-                    className="text-sm text-white/70 hover:text-cyberpunk-blue transition-colors duration-200"
+                    className="text-sm font-medium tracking-wide text-white/80 hover:text-cyberpunk-blue transition-colors duration-200 hover:translate-x-1 transform inline-block"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -80,7 +80,7 @@ const Footer = () => {
             
             <a 
               href="https://www.aiwebtools.ai"
-              className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium text-white bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple hover:from-cyberpunk-purple hover:to-cyberpunk-blue transition-colors duration-300 shadow-lg"
+              className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium tracking-wider text-white bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple hover:from-cyberpunk-purple hover:to-cyberpunk-blue transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -93,7 +93,7 @@ const Footer = () => {
           <p className="text-center text-sm text-white/50">
             <a 
               href="https://www.aiwebtools.ai"
-              className="hover:text-cyberpunk-blue transition-colors duration-200"
+              className="hover:text-cyberpunk-blue transition-colors duration-200 font-medium"
               target="_blank"
               rel="noopener noreferrer"
             >
