@@ -28,13 +28,13 @@ const Header = () => {
   
   return (
     <header className={cn(
-      'fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4',
+      'fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-6',
       isScrolled
         ? 'bg-black/70 backdrop-blur-lg border-b border-cyberpunk-blue/30'
         : 'bg-transparent'
     )}>
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <a href="/" className="flex items-center space-x-2">
             <Eye size={28} className="text-cyberpunk-blue animate-pulse-glow" />
             <div>
@@ -43,7 +43,7 @@ const Header = () => {
             </div>
           </a>
           
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-6 mt-2 md:mt-0">
             {navLinks.map((link, index) => (
               <a 
                 key={index} 
@@ -58,7 +58,7 @@ const Header = () => {
           </nav>
           
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-white absolute top-6 right-4"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
           >
@@ -69,7 +69,7 @@ const Header = () => {
       
       {/* Mobile menu */}
       <div className={`
-        md:hidden fixed inset-x-0 top-[72px] bg-black/90 backdrop-blur-lg border-b border-cyberpunk-blue/30 p-4
+        md:hidden fixed inset-x-0 top-[90px] bg-black/90 backdrop-blur-lg border-b border-cyberpunk-blue/30 p-4
         transition-all duration-300 ease-in-out z-50
         ${mobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10 pointer-events-none'}
       `}>

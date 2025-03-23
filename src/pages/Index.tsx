@@ -18,7 +18,7 @@ const Index = () => {
   return <div className="min-h-screen bg-cyberpunk-dark text-white">
       <Header />
       
-      <main>
+      <main className="pt-32">
         {/* Moved Embedded Image Section to be above the HeroSection */}
         <section className="section text-center">
           <h2 className="section-heading mb-10">
