@@ -1,8 +1,11 @@
 
 import { ChevronDown } from 'lucide-react';
 import ThreeDPyramid from './ThreeDPyramid';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const HeroSection = () => {
+  const isMobile = useIsMobile();
+  
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-16">
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
@@ -19,14 +22,14 @@ const HeroSection = () => {
               <span className="text-sm font-bold text-cyberpunk-blue tracking-wider">ILLUMINATE THE UNSEEN</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight animate-fade-in tracking-wide" style={{
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight animate-fade-in tracking-wide" style={{
             animationDelay: '0.2s'
           }}>
               <span className="gradient-text">Uncovering Hidden</span><br />
               <span className="gold-gradient-text">Historical Patterns</span>
             </h1>
             
-            <p className="text-xl text-white/90 mb-8 animate-fade-in" style={{
+            <p className="text-lg md:text-xl text-white/90 mb-8 animate-fade-in" style={{
             animationDelay: '0.4s'
           }}>
               Analyze historical patterns beyond conventional narratives. Reveal the deeper structures that have guided civilization for millennia.
@@ -36,15 +39,15 @@ const HeroSection = () => {
             animationDelay: '0.6s'
           }}>
               <a href="https://chatgpt.com/g/g-67df2c4efaa08191a3cd57599826e2b8-uncovering-hidden-historical-patterns-gpt" 
-                 className="cyber-button w-full sm:w-auto px-8 py-4 whitespace-nowrap rounded-none border-2 border-cyberpunk-blue" 
+                 className="cyber-button w-full sm:w-auto px-4 sm:px-6 md:px-8 py-3 md:py-4 rounded-none border-2 border-cyberpunk-blue overflow-hidden" 
                  target="_blank" 
                  rel="noopener noreferrer">
-                <span className="text-base md:text-lg font-bold tracking-wider">USE HIDDEN HISTORICAL PATTERNS GPT</span>
+                <span className="text-sm sm:text-base md:text-lg font-bold tracking-wider whitespace-nowrap">USE HIDDEN HISTORICAL PATTERNS GPT</span>
               </a>
               
               <a href="#how-it-works" 
-                 className="flex items-center justify-center px-8 py-4 text-white hover:text-white transition-colors w-full sm:w-auto whitespace-nowrap border-2 border-cyberpunk-gold/50 hover:border-cyberpunk-gold hover:bg-cyberpunk-gold/10">
-                <span className="text-base md:text-lg font-bold tracking-wider">LEARN MORE</span>
+                 className="flex items-center justify-center px-4 sm:px-6 md:px-8 py-3 md:py-4 text-white hover:text-white transition-colors w-full sm:w-auto whitespace-nowrap border-2 border-cyberpunk-gold/50 hover:border-cyberpunk-gold hover:bg-cyberpunk-gold/10">
+                <span className="text-sm sm:text-base md:text-lg font-bold tracking-wider">LEARN MORE</span>
                 <ChevronDown size={16} className="ml-2" />
               </a>
             </div>
@@ -52,7 +55,7 @@ const HeroSection = () => {
           
           <div className="relative flex justify-center items-center animate-float">
             <div className="absolute w-full h-full bg-gradient-to-r from-cyberpunk-blue/20 to-cyberpunk-purple/20 rounded-full filter blur-[50px] opacity-70"></div>
-            <div className="relative h-[400px] w-[400px] mx-auto">
+            <div className="relative h-[300px] sm:h-[350px] md:h-[400px] w-[300px] sm:w-[350px] md:w-[400px] mx-auto">
               <ThreeDPyramid />
               <div className="absolute inset-0 bg-cyberpunk-blue/10 rounded-full animate-pulse opacity-50"></div>
             </div>
