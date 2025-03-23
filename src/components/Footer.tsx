@@ -25,9 +25,10 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Eye size={isMobile ? 20 : 24} className="text-cyberpunk-blue" />
-              <h2 className="text-base md:text-lg font-bold gradient-text">Hidden Historical Patterns GPT</h2>
+              <h2 className="text-base md:text-lg font-bold gradient-text">Hidden Historical Patterns AI</h2>
             </div>
-            <p className="text-xs md:text-sm text-white/70 mb-4">
+            <p className="text-xs text-cyberpunk-blue font-medium">Presented by AiWebTools.ai</p>
+            <p className="text-xs md:text-sm text-white/70 mb-4 mt-2">
               Revealing the deeper currents that have guided civilization for millennia, beyond surface-level narratives.
             </p>
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">

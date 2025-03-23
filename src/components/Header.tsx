@@ -41,9 +41,9 @@ const Header = () => {
             <Eye size={isMobile ? 24 : 28} className="text-cyberpunk-blue animate-pulse-glow" />
             <div>
               <h1 className={`${isMobile ? 'text-lg' : 'text-xl'} font-extrabold gradient-text tracking-wider`}>
-                {isMobile ? 'Hidden Historical Patterns' : 'Uncovering Hidden Historical Patterns GPT'}
+                {isMobile ? 'Hidden Historical Patterns AI' : 'Hidden Historical Patterns AI'}
               </h1>
-              <p className="text-xs text-cyberpunk-blue font-medium">Presented by AiWebTools.Ai</p>
+              <p className="text-xs text-cyberpunk-blue font-medium">Presented by AiWebTools.ai</p>
             </div>
           </a>
           
