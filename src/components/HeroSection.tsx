@@ -1,6 +1,5 @@
 
 import { ChevronDown } from 'lucide-react';
-import ThreeDPyramid from './ThreeDPyramid';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const HeroSection = () => {
@@ -55,10 +54,27 @@ const HeroSection = () => {
           
           <div className="relative flex justify-center items-center animate-float">
             <div className="absolute w-full h-full bg-gradient-to-r from-cyberpunk-blue/20 to-cyberpunk-purple/20 rounded-full filter blur-[50px] opacity-70"></div>
-            <div className="relative h-[300px] sm:h-[350px] md:h-[400px] w-[300px] sm:w-[350px] md:w-[400px] mx-auto">
-              <ThreeDPyramid />
-              <div className="absolute inset-0 bg-cyberpunk-blue/10 rounded-full animate-pulse opacity-50"></div>
-            </div>
+            
+            {/* Interactive Image with Link - Replaces the 3D Pyramid */}
+            <a 
+              href="https://chatgpt.com/g/g-67df2c4efaa08191a3cd57599826e2b8-uncovering-hidden-historical-patterns-gpt"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block relative group"
+            >
+              <div className="absolute inset-0 border-2 border-cyberpunk-gold opacity-0 group-hover:opacity-100 transition-all duration-300 scale-105 rounded-lg"></div>
+              <div className="absolute inset-0 border-2 border-cyberpunk-blue animate-pulse-glow rounded-lg"></div>
+              
+              <img 
+                src="https://ideogram.ai/assets/image/lossless/response/C64dUHYfTbCDZYoc7XYIHQ" 
+                alt="Uncovering Hidden Historical Patterns" 
+                className="w-full h-auto max-w-[350px] md:max-w-[400px] rounded-lg shadow-lg group-hover:shadow-[0_0_25px_rgba(212,175,55,0.5)] transition-all duration-300"
+              />
+              
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-cyberpunk-gold/80 hover:bg-cyberpunk-gold text-black font-bold py-2 px-6 rounded-none shadow-gold transition-all duration-300 opacity-0 group-hover:opacity-100">
+                TRY IT NOW
+              </div>
+            </a>
           </div>
         </div>
         

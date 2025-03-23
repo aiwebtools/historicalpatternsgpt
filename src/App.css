@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Interactive image styling */
+.interactive-image {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interactive-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.7);
+}
+
