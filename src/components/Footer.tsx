@@ -15,7 +15,7 @@ const Footer = () => {
   
   const legalLinks = [
     { name: 'Privacy Policy', url: 'https://openai.com/policies/privacy-policy/' },
-    { name: 'Terms of Service', url: 'https://aiwebtools.ai/terms-of-services' }
+    { name: 'Terms of Service', url: 'https://aiwebtools.lovable.app/disclaimers' }
   ];
   
   return (
@@ -94,16 +94,21 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 pt-6">
-          <p className="text-center text-xs md:text-sm text-white/50">
-            <a 
-              href="https://www.aiwebtools.ai"
-              className="hover:text-cyberpunk-blue transition-colors duration-200 font-medium"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              © 2025 AI WEB TOOLS LLC All rights reserved.
-            </a>
-          </p>
+          <div className="text-center space-y-2">
+            <p className="text-xs text-white/60 italic">
+              For informational, educational, and research purposes only
+            </p>
+            <p className="text-xs md:text-sm text-white/50">
+              <a 
+                href="https://www.aiwebtools.ai"
+                className="hover:text-cyberpunk-blue transition-colors duration-200 font-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                © 2025 AI WEB TOOLS LLC All rights reserved.
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
