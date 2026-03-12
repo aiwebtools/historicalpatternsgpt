@@ -83,7 +83,7 @@ const Footer = () => {
             </ul>
             
             <a 
-              href="https://www.aiwebtools.ai"
+              href="https://aiwebtools.lovable.app/?via=aiwebtools"
               className="inline-flex items-center justify-center rounded-none px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-medium tracking-wider text-white bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple hover:from-cyberpunk-purple hover:to-cyberpunk-blue transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               target="_blank"
               rel="noopener noreferrer"
