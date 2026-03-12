@@ -10,7 +10,7 @@ const Footer = () => {
     { name: 'Oraculum', url: 'https://oraculum.lovable.app/?via=aiwebtools' },
     { name: 'FAQ', url: '#faq' },
     { name: 'Disclaimer', url: '#disclaimer' },
-    { name: 'More AI Tools', url: 'https://www.aiwebtools.ai' }
+    { name: 'More AI Tools', url: 'https://aiwebtools.lovable.app/?via=aiwebtools' }
   ];
   
   const legalLinks = [
